@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/NullYing/WechatOpenSDK.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  s.requires_arc = deprecated = false
+  s.requires_arc = false
   
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   s.vendored_libraries = 'OpenSDK1.9.2/libWechatSDK.a'
+  s.public_header_files = 'OpenSDK1.9.2/*.h'
   s.source_files = 'OpenSDK1.9.2/*.{h}'
   
   s.frameworks  = 'Security', 'UIKit', 'CoreGraphics', 'WebKit'
