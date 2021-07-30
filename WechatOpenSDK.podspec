@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = deprecated = false
   
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   s.vendored_libraries = 'OpenSDK1.9.2/libWechatSDK.a'
   s.source_files = 'OpenSDK1.9.2/*.{h}'
   
