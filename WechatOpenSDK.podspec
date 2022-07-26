@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WechatOpenSDK'
-  s.version          = '1.9.2'
+  s.version          = '1.9.6'
   s.summary          = 'Includes the following WeChat features: Share to Moments, Log In via WeChat, Save to Favorites, WeChat Pay, etc.'
 
   s.description      = <<-DESC
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = false
   
-  s.vendored_libraries = 'OpenSDK1.9.2/libWechatSDK.a'
-  s.public_header_files = 'OpenSDK1.9.2/*.h'
-  s.source_files = 'OpenSDK1.9.2/*.{h}'
+  s.vendored_libraries = 'OpenSDK1.9.6/libWechatSDK.a'
+  s.public_header_files = 'OpenSDK1.9.6/*.h'
+  s.source_files = 'OpenSDK1.9.6/*.{h}'
   
   s.frameworks  = 'Security', 'UIKit', 'CoreGraphics', 'WebKit'
   s.libraries = 'z', 'c++', 'sqlite3.0'
